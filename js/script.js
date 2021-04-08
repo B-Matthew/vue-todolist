@@ -18,9 +18,10 @@ function initVue() {
 
     methods:{
       addElement: function() {
-        if (this.val != "")
+        if (this.val != "") {
         this.list.push(this.val);
         this.val="";
+      }
       },
 
       removeElement: function(indice) {
